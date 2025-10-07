@@ -1,0 +1,27 @@
+{
+  "name": "falling-emojis",
+  "version": "1.0.0",
+  "description": "A simple web project to create falling emoji animations using HTML, CSS, and JavaScript.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite",
+    "serve": "python3 -m http.server 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "animations",
+    "particles",
+    "emojis",
+    "falling",
+    "web development"
+  ],
+  "author": "midcenturydude7",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.3.6"
+  }
+}
