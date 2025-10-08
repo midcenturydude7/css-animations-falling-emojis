@@ -1,12 +1,32 @@
 export const emojis = [
   {
-    name: "love-mug",
-    text: "💖",
+    name: "party-popper",
+    text: "🎉",
     style: { fontSize: "24px" },
   },
   {
-    name: "party-mug",
-    text: "🥳" ,
+    name: "thumbs-up",
+    text: "👍",
     style: { fontSize: "24px" },
-  }
-]
+  },
+  {
+    name: "coffee-cup",
+    text: "☕",
+    style: { fontSize: "24px" },
+  },
+  {
+    name: "party-favor",
+    text: "🎊",
+    style: { fontSize: "24px" },
+  },
+  {
+    name: "clapping-hands",
+    text: "👏",
+    style: { fontSize: "24px" },
+  },
+  {
+    name: "dollar-bills",
+    text: "💵",
+    style: { fontSize: "24px" },
+  },
+];
