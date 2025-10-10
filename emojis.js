@@ -1,32 +1,34 @@
+import { random } from "lodash";
+
 export const emojis = [
   {
     name: "party-popper",
     text: "🎉",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
   {
     name: "thumbs-up",
     text: "👍",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
   {
     name: "coffee-cup",
     text: "☕",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
   {
     name: "party-favor",
     text: "🎊",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
   {
     name: "clapping-hands",
     text: "👏",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
   {
     name: "dollar-bills",
     text: "💵",
-    style: { fontSize: "24px" },
+    style: { animationDuration: `${random(1200, 2200)}ms` },
   },
 ];

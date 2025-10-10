@@ -1,12 +1,19 @@
+import { random, range } from "lodash";
 import { emojis } from "./emojis";
 
-// Map over the emojis array and create a span for each emoji
-// Set the text content and style of each span based on the emoji object
-// Append each span to the document body
+const emojiWrapper = document.querySelector(".emojiWrapper");
 
-// Make the emojis fall from the top to the bottom of the viewport
-// Use requestAnimationFrame for smooth animation
-// Reset the position of the emoji to the top once it goes off the bottom of the viewport
+// Create emoji elements using map
+const emojiElements = emojis.map(() => {
+  const randomEmoji = emojis[random(0, emojis.length - 1)];
+  const emojiElement = document.createElement("div");
+  
+  emojiElement.classList.add("emoji");
+  emojiElement.textContent = randomEmoji.text;
+  emojiElement.style.animationDuration = randomEmoji.style.animationDuration;
+  
+  return emojiElement;
+});
 
-// Optional: Add some horizontal movement to make it more dynamic
-// Optional: Vary the speed of each emoji for a more natural effect
+// Append all emoji elements to the wrapper
+emojiElements.forEach(element => emojiWrapper.appendChild(element));
