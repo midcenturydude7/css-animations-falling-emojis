@@ -11,10 +11,13 @@ const emojiElements = emojis.map(() => {
   emojiElement.classList.add("emoji");
   emojiElement.textContent = randomEmoji.text;
   emojiElement.style.animationDuration = randomEmoji.style.animationDuration;
-  emojiElement.style.marginTop = randomEmoji.style.marginTop;
+  emojiElement.style.animationDelay = randomEmoji.style.animationDelay || "0ms";
 
   return emojiElement;
 });
 
-// Append all emoji elements to the wrapper
-emojiElements.forEach((element) => emojiWrapper.appendChild(element));
+// Append all emoji elements to the wrapper and use the range function to increase the number of emojis
+range(5).forEach(() => {
+  const randomElement = emojiElements[random(0, emojiElements.length - 1)];
+  emojiWrapper.appendChild(randomElement);
+});

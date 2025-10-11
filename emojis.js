@@ -6,6 +6,7 @@ export const emojis = [
     text: "🎉",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
+      animationDelay: `${random(0, 500)}ms`,
       marginTop: `${random(10, 20)}px`,
     },
   },
@@ -14,7 +15,7 @@ export const emojis = [
     text: "👍",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
-      marginTop: `${random(0, 50)}px`,
+      animationDelay: `${random(0, 500)}ms`,
     },
   },
   {
@@ -22,7 +23,7 @@ export const emojis = [
     text: "☕",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
-      marginTop: `${random(0, 20)}px`,
+      animationDelay: `${random(0, 500)}ms`,
     },
   },
   {
@@ -30,7 +31,7 @@ export const emojis = [
     text: "🎊",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
-      marginTop: `${random(10, 70)}px`,
+      animationDelay: `${random(0, 500)}ms`,
     },
   },
   {
@@ -38,7 +39,7 @@ export const emojis = [
     text: "👏",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
-      marginTop: `${random(0, 20)}px`,
+      animationDelay: `${random(0, 500)}ms`,
     },
   },
   {
@@ -46,7 +47,7 @@ export const emojis = [
     text: "💵",
     style: {
       animationDuration: `${random(1200, 2200)}ms`,
-      marginTop: `${random(0, 20)}px`,
+      animationDelay: `${random(0, 500)}ms`,
     },
   },
 ];

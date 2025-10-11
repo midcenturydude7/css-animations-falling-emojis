@@ -29,6 +29,7 @@ main {
   height: 320px;
   font-size: 2rem;
   background: hsl(350deg 50% 95%);
+  user-select: none;
 }
 
 .avatar {
@@ -52,12 +53,12 @@ main h1 {
 /* Emoji Animation */
 @keyframes fall {
   from {
-    transform: translateY(0px);
+    transform: translateY(-100%);
   }
   to {
     transform: translateY(110vh);
   }
 }
 .emoji {
-  animation: fall linear infinite;
+  animation: fall infinite linear backwards;
 }
